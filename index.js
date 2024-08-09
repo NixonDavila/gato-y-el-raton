@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     let cuadros = document.getElementsByClassName("div-option");
     let turnoPantalla = document.getElementById("turnoEnPantalla");
@@ -121,15 +120,10 @@ document.addEventListener("DOMContentLoaded", function () {
         turnoPantalla.innerHTML = "Turno del jugador"; // Restablece el mensaje de turno
         mensaje.innerHTML = ""; // Limpia el mensaje de ganador o empate
     
-        // Reinicia los contadores a cero y actualiza la interfaz
-        contadorO = 0;
-        contadorX = 0;
-        winO.innerHTML = contadorO; // Actualiza el contador de O en pantalla
-        winX.innerHTML = contadorX; // Actualiza el contador de X en pantalla
+       
     
-        // Limpia los contadores en localStorage
-        localStorage.removeItem('contadorO');
-        localStorage.removeItem('contadorX');
+        
+      
     
         // Limpia el estado del juego en localStorage
         localStorage.removeItem('estadoJuego');
@@ -194,7 +188,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// const miMusica = document.getElementById("miMusica");
+// const toggleButton = document.getElementById("toggleMusic");
 
+// // Reproduce la música al cargar la página
+// window.onload = () => {
+//     miMusica.play();
+// };
 
+// // Controla la reproducción/pausa de la música
+// toggleButton.addEventListener("DOMContentLoaded", () => {
+//     if (miMusica.paused) {
+//         miMusica.play();
+//         toggleButton.innerText = "Pausar Música";
+//     } else {
+//         miMusica.pause();
+//         toggleButton.innerText = "Reproducir Música";
+//     }
+// });
 
 
